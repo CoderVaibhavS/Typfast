@@ -1,0 +1,54 @@
+.sidebar{
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 5%;
+    color: beige;
+}
+
+/* timer, wpm divs */
+.sidebar > *{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+}
+
+.sidebar > * > *{
+    font-size: 1.2rem;
+}
+
+.reset {
+    font-size: 1.2rem;
+    border: 2px solid beige;
+    padding: 10% 2%;
+    text-align: center;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+
+  @media (max-width: 680px) {
+    
+    .sidebar{
+        flex-direction: row;
+        width: 100%;
+        padding: 0;
+        padding-bottom: 5%;
+    }
+
+    .reset{
+        padding: 2% 0;
+    }
+
+    .sidebar > * > * {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 530px) {
+    
+    .sidebar > * > * {
+        font-size: 0.9rem;
+    }
+}

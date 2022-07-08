@@ -1,0 +1,119 @@
+/* whole app below header */
+.container{
+    width: 100vw;
+    height: 90%;
+    background-color: #4d4a46e8;
+    display: flex;
+}
+
+.container-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 60%;
+    height: 90%;
+    margin: auto;
+}
+
+/* two container divs - 1 sentence and type box div */
+.container-div > *{
+    width: 90%;
+    padding: 5%;
+}
+
+/* input box */
+input{
+    background-color: #4d4a46e8;
+    color: white;
+    height: 100%;
+    width: 35px;
+    outline: none;
+}
+
+.input{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 50%;
+    margin: auto;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+
+/* instruction line */
+.type-line{
+    font-family: 'Cairo', sans-serif;;
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* type box div - contains another two divs */
+.type-box {
+    display: flex;
+    flex-direction: row;
+    height: 80%;
+    border: 2px solid beige;
+    background-color: #534f4fd9;
+    color: #a5a5a5bf;
+}
+
+@media (max-width: 1100px) {
+
+    .type-line{
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    
+    .container-div{
+        width: 75%;
+    }
+}
+
+@media (max-width: 680px) {
+    
+    .input{
+        width: 75%;
+    }
+
+    .type-box{
+        flex-direction: column-reverse;
+    }
+
+    .sidebar{
+        flex-direction: row;
+        width: 100%;
+        padding: 0;
+    }
+
+    .reset{
+        padding: 2% 0;
+    }
+}
+
+@media (max-width: 530px) {
+    
+    .input{
+        width: 85%;
+    }
+
+    .upper{
+        padding: 5% 0;
+        margin: auto;
+        width: 100%;
+    }
+
+    .type-line{
+        font-size: 1rem;
+    }
+}

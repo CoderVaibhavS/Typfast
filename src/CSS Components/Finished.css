@@ -1,0 +1,25 @@
+.finished {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 80%;
+    border: 2px solid beige;
+    background-color: #534f4fd9;
+    color: #a5a5a5bf;
+}
+
+.test_finished{
+    color: #de7373;
+    font-size: 2.5rem;
+}
+
+.score, .retry{
+    color: white;
+    font-size: 1.5rem;
+}
+
+.retry{
+    cursor: pointer;
+    color: #d4bebe;
+}
