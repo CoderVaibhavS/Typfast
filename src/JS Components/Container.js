@@ -23,7 +23,7 @@ export default function Container() {
     }
 
     const updateWpm = (words) => {
-        time_gone === 0 ? setWpm(0) : setWpm(Math.ceil(words * input / (time_gone)));
+        time_gone === 0 ? setWpm(0) : setWpm(Math.ceil(words * 60 / (time_gone)));
     }
 
     const handleOnChange = (event) => {
